@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		491E8E2D28683A3100F9183B /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E8E2C28683A3100F9183B /* RoundedTextField.swift */; };
+		491E8E2F28683B4900F9183B /* RoundedSecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E8E2E28683B4900F9183B /* RoundedSecureTextField.swift */; };
+		491E8E3128683BB300F9183B /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E8E3028683BB300F9183B /* RoundedButton.swift */; };
+		491F9AD228684569006B1FC9 /* AuthView.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491F9AD128684569006B1FC9 /* AuthView.ViewModel.swift */; };
 		49C6BBDF28681FC800118FA6 /* TrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C6BBDE28681FC800118FA6 /* TrackApp.swift */; };
 		49C6BBE128681FC800118FA6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C6BBE028681FC800118FA6 /* ContentView.swift */; };
 		49C6BBE328681FCA00118FA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C6BBE228681FCA00118FA6 /* Assets.xcassets */; };
@@ -17,15 +21,21 @@
 		49C6BBF628682B9900118FA6 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 49C6BBF528682B9900118FA6 /* FirebaseFirestore */; };
 		49C6BBF828682B9900118FA6 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 49C6BBF728682B9900118FA6 /* FirebaseRemoteConfig */; };
 		49C6BBFA28682B9900118FA6 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 49C6BBF928682B9900118FA6 /* FirebaseStorage */; };
+		49C6BBFD286830F900118FA6 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C6BBFC286830F900118FA6 /* AuthView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		491E8E2C28683A3100F9183B /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
+		491E8E2E28683B4900F9183B /* RoundedSecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedSecureTextField.swift; sourceTree = "<group>"; };
+		491E8E3028683BB300F9183B /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		491F9AD128684569006B1FC9 /* AuthView.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.ViewModel.swift; sourceTree = "<group>"; };
 		49C6BBDB28681FC800118FA6 /* Track.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Track.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C6BBDE28681FC800118FA6 /* TrackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackApp.swift; sourceTree = "<group>"; };
 		49C6BBE028681FC800118FA6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		49C6BBE228681FCA00118FA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49C6BBE528681FCA00118FA6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		49C6BBEE2868298F00118FA6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		49C6BBFC286830F900118FA6 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +54,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		491F9AD028684553006B1FC9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				491F9AD128684569006B1FC9 /* AuthView.ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4960FFD4286836BF005ADEF7 /* CommonViews */ = {
+			isa = PBXGroup;
+			children = (
+				491E8E2C28683A3100F9183B /* RoundedTextField.swift */,
+				491E8E2E28683B4900F9183B /* RoundedSecureTextField.swift */,
+				491E8E3028683BB300F9183B /* RoundedButton.swift */,
+			);
+			path = CommonViews;
+			sourceTree = "<group>";
+		};
 		49C6BBD228681FC800118FA6 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +91,7 @@
 		49C6BBDD28681FC800118FA6 /* Track */ = {
 			isa = PBXGroup;
 			children = (
+				491F9AD028684553006B1FC9 /* ViewModels */,
 				49C6BBED2868298200118FA6 /* Views */,
 				49C6BBEC2868297200118FA6 /* Config */,
 				49C6BBE228681FCA00118FA6 /* Assets.xcassets */,
@@ -91,9 +120,19 @@
 		49C6BBED2868298200118FA6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4960FFD4286836BF005ADEF7 /* CommonViews */,
+				49C6BBFB286830E200118FA6 /* Auth */,
 				49C6BBE028681FC800118FA6 /* ContentView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		49C6BBFB286830E200118FA6 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				49C6BBFC286830F900118FA6 /* AuthView.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,7 +217,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				49C6BBE128681FC800118FA6 /* ContentView.swift in Sources */,
+				491E8E3128683BB300F9183B /* RoundedButton.swift in Sources */,
+				491F9AD228684569006B1FC9 /* AuthView.ViewModel.swift in Sources */,
 				49C6BBDF28681FC800118FA6 /* TrackApp.swift in Sources */,
+				49C6BBFD286830F900118FA6 /* AuthView.swift in Sources */,
+				491E8E2F28683B4900F9183B /* RoundedSecureTextField.swift in Sources */,
+				491E8E2D28683A3100F9183B /* RoundedTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
