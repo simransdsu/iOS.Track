@@ -21,12 +21,20 @@ struct AuthView: View {
         .padding(.top, 20)
       RoundedSecureField(placeHolder: viewModel.passwordPlaceHolder, text: $viewModel.password)
         .padding(.top, 10)
-      RoundedButton(action: viewModel.authenticate, title: viewModel.authenticationButtonTitle)
+      RoundedButton(action: { viewModel.authenticate() }, title: viewModel.authenticationButtonTitle)
         .padding(.top, 36)
       Spacers(3)
       
     }
     .padding()
+    .alert("Error!", isPresented: $viewModel.hasError, actions: {
+      Button(role: .cancel, action: {}) {
+        Text("OK")
+      }
+    }, message: {
+      Text(viewModel.appError?.message ?? "")
+    })
+    
   }
 }
 
