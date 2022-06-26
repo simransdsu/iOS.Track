@@ -7,10 +7,6 @@
 
 import SwiftUI
 
-enum AuthType: Int {
-  case signUp = 0
-  case login = 1
-}
 
 struct AuthView: View {
   
@@ -18,15 +14,17 @@ struct AuthView: View {
   
   var body: some View {
     VStack {
-      Picker("Select", selection: $viewModel.authType) {
-        Text("Sign Up").tag(AuthType.signUp)
-        Text("Log In").tag(AuthType.login)
-      }
-      .pickerStyle(.segmented)
       
-      RoundedTextField(placeHolder: "Email", text: $viewModel.email)
-      RoundedSecureTextField(placeHolder: "Password", text: $viewModel.password)
-      RoundedButton(action: viewModel.authenticate, title: viewModel.authType == .signUp ? "Sign up" : "Log In")
+      Spacers()
+      SignupLoginSegmentedControl(authType: $viewModel.authType)
+      RoundedTextField(placeHolder: viewModel.emailPlaceHolder, text: $viewModel.email)
+        .padding(.top, 20)
+      RoundedSecureField(placeHolder: viewModel.passwordPlaceHolder, text: $viewModel.password)
+        .padding(.top, 10)
+      RoundedButton(action: viewModel.authenticate, title: viewModel.authenticationButtonTitle)
+        .padding(.top, 36)
+      Spacers(3)
+      
     }
     .padding()
   }
@@ -38,3 +36,6 @@ struct AuthView_Previews: PreviewProvider {
     AuthView()
   }
 }
+
+
+

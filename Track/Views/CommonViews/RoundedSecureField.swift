@@ -1,5 +1,5 @@
   //
-  //  RoundedSecureTextField.swift
+  //  RoundedSecureField.swift
   //  Track
   //
   //  Created by Simran Preet Narang on 2022-06-25.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RoundedSecureTextField: View {
+struct RoundedSecureField: View {
   
   var placeHolder: String
   @Binding var text: String
@@ -22,6 +22,6 @@ struct RoundedSecureTextField: View {
 
 struct RoundedSecureTextField_Previews: PreviewProvider {
   static var previews: some View {
-    RoundedSecureTextField(placeHolder: "Password", text: .constant("Password"))
+    RoundedSecureField(placeHolder: "Password", text: .constant("Password"))
   }
 }

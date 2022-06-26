@@ -14,6 +14,10 @@ extension AuthView {
     @Published var password: String = ""
     @Published var authType: AuthType = .signUp
     
+    var authenticationButtonTitle: String { authType == .signUp ? "Sign Up" : "Log In" }
+    var emailPlaceHolder: String { "Email" }
+    var passwordPlaceHolder: String { "Password" }
+    
     func authenticate() {
       if authType == .signUp {
         print("Sign Up")
