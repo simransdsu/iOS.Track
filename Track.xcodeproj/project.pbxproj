@@ -10,15 +10,21 @@
 		491E8E2D28683A3100F9183B /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E8E2C28683A3100F9183B /* RoundedTextField.swift */; };
 		491E8E2F28683B4900F9183B /* RoundedSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E8E2E28683B4900F9183B /* RoundedSecureField.swift */; };
 		491E8E3128683BB300F9183B /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E8E3028683BB300F9183B /* RoundedButton.swift */; };
-		491F9AD228684569006B1FC9 /* AuthView.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491F9AD128684569006B1FC9 /* AuthView.ViewModel.swift */; };
+		491F9AD228684569006B1FC9 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491F9AD128684569006B1FC9 /* AuthService.swift */; };
 		491F9AD42868DAFD006B1FC9 /* Spacers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491F9AD32868DAFD006B1FC9 /* Spacers.swift */; };
 		491F9AD72868DB85006B1FC9 /* SignupLoginSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491F9AD62868DB85006B1FC9 /* SignupLoginSegmentedControl.swift */; };
 		491F9ADB2868DD35006B1FC9 /* AuthType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491F9ADA2868DD35006B1FC9 /* AuthType.swift */; };
 		491F9ADE2868E079006B1FC9 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491F9ADD2868E079006B1FC9 /* AppError.swift */; };
+		494E797F2869EAD300630536 /* ExpenseListView.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494E797E2869EAD300630536 /* ExpenseListView.ViewModel.swift */; };
+		494E79832869ED8100630536 /* AddExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494E79822869ED8100630536 /* AddExpenseView.swift */; };
+		494E7985286A07AE00630536 /* ExpenseValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494E7984286A07AE00630536 /* ExpenseValidator.swift */; };
+		494E7987286A07CF00630536 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494E7986286A07CF00630536 /* Expense.swift */; };
 		49651FC22868FC8700FD1577 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49651FBD2868FC8700FD1577 /* Date+Extensions.swift */; };
 		49651FC32868FC8700FD1577 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49651FBE2868FC8700FD1577 /* String+Extensions.swift */; };
 		49651FC52868FC8700FD1577 /* Encodable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49651FC02868FC8700FD1577 /* Encodable+Extensions.swift */; };
 		49651FC62868FC8700FD1577 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49651FC12868FC8700FD1577 /* Data+Extensions.swift */; };
+		499FEC3F286926A800E51CBF /* ExpensesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499FEC3E286926A800E51CBF /* ExpensesListView.swift */; };
+		49AE995F2869551C00914AB8 /* UserValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AE995E2869551C00914AB8 /* UserValidator.swift */; };
 		49C6BBDF28681FC800118FA6 /* TrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C6BBDE28681FC800118FA6 /* TrackApp.swift */; };
 		49C6BBE128681FC800118FA6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C6BBE028681FC800118FA6 /* ContentView.swift */; };
 		49C6BBE328681FCA00118FA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C6BBE228681FCA00118FA6 /* Assets.xcassets */; };
@@ -36,15 +42,21 @@
 		491E8E2C28683A3100F9183B /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
 		491E8E2E28683B4900F9183B /* RoundedSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedSecureField.swift; sourceTree = "<group>"; };
 		491E8E3028683BB300F9183B /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
-		491F9AD128684569006B1FC9 /* AuthView.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.ViewModel.swift; sourceTree = "<group>"; };
+		491F9AD128684569006B1FC9 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		491F9AD32868DAFD006B1FC9 /* Spacers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacers.swift; sourceTree = "<group>"; };
 		491F9AD62868DB85006B1FC9 /* SignupLoginSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupLoginSegmentedControl.swift; sourceTree = "<group>"; };
 		491F9ADA2868DD35006B1FC9 /* AuthType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthType.swift; sourceTree = "<group>"; };
 		491F9ADD2868E079006B1FC9 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		494E797E2869EAD300630536 /* ExpenseListView.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseListView.ViewModel.swift; sourceTree = "<group>"; };
+		494E79822869ED8100630536 /* AddExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseView.swift; sourceTree = "<group>"; };
+		494E7984286A07AE00630536 /* ExpenseValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseValidator.swift; sourceTree = "<group>"; };
+		494E7986286A07CF00630536 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		49651FBD2868FC8700FD1577 /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		49651FBE2868FC8700FD1577 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		49651FC02868FC8700FD1577 /* Encodable+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encodable+Extensions.swift"; sourceTree = "<group>"; };
 		49651FC12868FC8700FD1577 /* Data+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		499FEC3E286926A800E51CBF /* ExpensesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesListView.swift; sourceTree = "<group>"; };
+		49AE995E2869551C00914AB8 /* UserValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserValidator.swift; sourceTree = "<group>"; };
 		49C6BBDB28681FC800118FA6 /* Track.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Track.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C6BBDE28681FC800118FA6 /* TrackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackApp.swift; sourceTree = "<group>"; };
 		49C6BBE028681FC800118FA6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,7 +85,8 @@
 		491F9AD028684553006B1FC9 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				491F9AD128684569006B1FC9 /* AuthView.ViewModel.swift */,
+				491F9AD128684569006B1FC9 /* AuthService.swift */,
+				494E797E2869EAD300630536 /* ExpenseListView.ViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -83,6 +96,7 @@
 			children = (
 				491F9ADA2868DD35006B1FC9 /* AuthType.swift */,
 				491F9ADD2868E079006B1FC9 /* AppError.swift */,
+				494E7986286A07CF00630536 /* Expense.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -110,6 +124,31 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		499FEC382869224000E51CBF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		499FEC3B2869263C00E51CBF /* ProtectedViews */ = {
+			isa = PBXGroup;
+			children = (
+				499FEC3E286926A800E51CBF /* ExpensesListView.swift */,
+				494E79822869ED8100630536 /* AddExpenseView.swift */,
+			);
+			path = ProtectedViews;
+			sourceTree = "<group>";
+		};
+		49AE995D286954B700914AB8 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				49AE995E2869551C00914AB8 /* UserValidator.swift */,
+				494E7984286A07AE00630536 /* ExpenseValidator.swift */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
 		49C6BBD228681FC800118FA6 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +168,8 @@
 		49C6BBDD28681FC800118FA6 /* Track */ = {
 			isa = PBXGroup;
 			children = (
+				49AE995D286954B700914AB8 /* Validators */,
+				499FEC382869224000E51CBF /* Services */,
 				49651FBC2868FC7A00FD1577 /* Extensions */,
 				491F9AD92868DD2B006B1FC9 /* Models */,
 				491F9AD028684553006B1FC9 /* ViewModels */,
@@ -160,19 +201,20 @@
 		49C6BBED2868298200118FA6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				49C6BBFB286830E200118FA6 /* PublicViews */,
+				499FEC3B2869263C00E51CBF /* ProtectedViews */,
 				4960FFD4286836BF005ADEF7 /* CommonViews */,
-				49C6BBFB286830E200118FA6 /* Auth */,
 				49C6BBE028681FC800118FA6 /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		49C6BBFB286830E200118FA6 /* Auth */ = {
+		49C6BBFB286830E200118FA6 /* PublicViews */ = {
 			isa = PBXGroup;
 			children = (
 				49C6BBFC286830F900118FA6 /* AuthView.swift */,
 			);
-			path = Auth;
+			path = PublicViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,21 +298,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				494E7987286A07CF00630536 /* Expense.swift in Sources */,
 				49C6BBE128681FC800118FA6 /* ContentView.swift in Sources */,
 				49651FC32868FC8700FD1577 /* String+Extensions.swift in Sources */,
+				49AE995F2869551C00914AB8 /* UserValidator.swift in Sources */,
 				491F9AD42868DAFD006B1FC9 /* Spacers.swift in Sources */,
 				491F9AD72868DB85006B1FC9 /* SignupLoginSegmentedControl.swift in Sources */,
 				491E8E3128683BB300F9183B /* RoundedButton.swift in Sources */,
 				49651FC62868FC8700FD1577 /* Data+Extensions.swift in Sources */,
-				491F9AD228684569006B1FC9 /* AuthView.ViewModel.swift in Sources */,
+				494E7985286A07AE00630536 /* ExpenseValidator.swift in Sources */,
+				491F9AD228684569006B1FC9 /* AuthService.swift in Sources */,
 				49651FC22868FC8700FD1577 /* Date+Extensions.swift in Sources */,
 				49651FC52868FC8700FD1577 /* Encodable+Extensions.swift in Sources */,
 				491F9ADB2868DD35006B1FC9 /* AuthType.swift in Sources */,
 				49C6BBDF28681FC800118FA6 /* TrackApp.swift in Sources */,
+				499FEC3F286926A800E51CBF /* ExpensesListView.swift in Sources */,
 				49C6BBFD286830F900118FA6 /* AuthView.swift in Sources */,
 				491F9ADE2868E079006B1FC9 /* AppError.swift in Sources */,
 				491E8E2F28683B4900F9183B /* RoundedSecureField.swift in Sources */,
 				491E8E2D28683A3100F9183B /* RoundedTextField.swift in Sources */,
+				494E79832869ED8100630536 /* AddExpenseView.swift in Sources */,
+				494E797F2869EAD300630536 /* ExpenseListView.ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +455,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -438,6 +487,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

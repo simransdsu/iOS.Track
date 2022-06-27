@@ -8,8 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+  
+  @StateObject var authservice = AuthService()
+  
   var body: some View {
-    AuthView()
+    VStack {
+      if authservice.isUserLogged {
+        ExpensesListView()
+          .environmentObject(authservice)
+      } else {
+        AuthView()
+          .environmentObject(authservice)
+      }
+        
+    }
   }
 }
 

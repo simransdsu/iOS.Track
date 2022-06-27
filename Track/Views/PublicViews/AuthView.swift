@@ -10,29 +10,29 @@ import SwiftUI
 
 struct AuthView: View {
   
-  @StateObject private var viewModel: AuthView.ViewModel = AuthView.ViewModel()
+  @EnvironmentObject private var authService: AuthService
   
   var body: some View {
     VStack {
       
       Spacers()
-      SignupLoginSegmentedControl(authType: $viewModel.authType)
-      RoundedTextField(placeHolder: viewModel.emailPlaceHolder, text: $viewModel.email)
+      SignupLoginSegmentedControl(authType: $authService.authType)
+      RoundedTextField(placeHolder: authService.emailPlaceHolder, text: $authService.email)
         .padding(.top, 20)
-      RoundedSecureField(placeHolder: viewModel.passwordPlaceHolder, text: $viewModel.password)
+      RoundedSecureField(placeHolder: authService.passwordPlaceHolder, text: $authService.password)
         .padding(.top, 10)
-      RoundedButton(action: { viewModel.authenticate() }, title: viewModel.authenticationButtonTitle)
+      RoundedButton(action: { authService.authenticate() }, title: authService.authenticationButtonTitle)
         .padding(.top, 36)
       Spacers(3)
       
     }
     .padding()
-    .alert("Error!", isPresented: $viewModel.hasError, actions: {
+    .alert("Error!", isPresented: $authService.hasError, actions: {
       Button(role: .cancel, action: {}) {
         Text("OK")
       }
     }, message: {
-      Text(viewModel.appError?.message ?? "")
+      Text(authService.appError?.message ?? "")
     })
     
   }
