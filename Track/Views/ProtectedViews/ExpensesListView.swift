@@ -10,14 +10,14 @@ import FirebaseAuth
 
 struct ExpensesListView: View {
   
-  @EnvironmentObject private var authService: AuthService
+  @EnvironmentObject private var authService: AuthController
   
   @State private var showAddExpenseView: Bool = false
   
   var body: some View {
     NavigationStack {
       VStack {
-        Text("\(authService.loggedInUserEmail ?? "No email found.")")
+        Text("\(authService.loggedInUserEmail() ?? "No email found.")")
       }
       .navigationTitle(Text("Track"))
       .toolbar {

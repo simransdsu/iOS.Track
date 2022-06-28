@@ -10,7 +10,7 @@ import SwiftUI
 
 struct AuthView: View {
   
-  @EnvironmentObject private var authService: AuthService
+  @EnvironmentObject private var authService: AuthController
   
   var body: some View {
     VStack {

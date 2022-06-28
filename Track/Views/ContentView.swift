@@ -9,16 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
   
-  @StateObject var authservice = AuthService()
+//  @StateObject var userService: UserService
+  @StateObject var authController: AuthController
+  
+  init() {
+//    _userService = StateObject(wrappedValue: UserService())
+    _authController = StateObject(wrappedValue: AuthController())
+  }
   
   var body: some View {
     VStack {
-      if authservice.isUserLogged {
+      if authController.isUserLogged {
         ExpensesListView()
-          .environmentObject(authservice)
+          .environmentObject(authController)
       } else {
         AuthView()
-          .environmentObject(authservice)
+          .environmentObject(authController)
       }
         
     }
